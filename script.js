@@ -1,24 +1,10 @@
-$(function() {
-
-    $('#login-show').click(function() {
-      $('#login-modal').fadeIn();
-    });
-  
-    $('.signup-show').click(function() {
-      $('#signup-modal').fadeIn();
-    });
-  
-    $('.close-modal').click(function() {
-      $('#login-modal').fadeOut();
-      $('#signup-modal').fadeOut();
-    });
-    
-    $('.lesson-hover').hover(
+$(function() {  
+    $('.title').hover(
       function() {
-        $(this).find('.text-contents').addClass('text-active');
+        $(this).css('opacity','0.3');
       },
       function() {
-        $(this).find('.text-contents').removeClass('text-active');
+        $(this).css('opacity','1');
       }
     );
   });
